@@ -57,8 +57,8 @@ if [ "$1" = "browser_RC_V1" ] ; then
     sync
     tar zxvf /tmp/$RELEASE_WEBKIT -C /opt/webkit-resource/
     sync
-    mv /opt/webkit-resource/webkit-resource-release/* /opt/webkit-resource/
-    rm -rf /opt/webkit-resource/webkit-resource-release
+    mv /opt/webkit-resource/webkit-resource2dmt/* /opt/webkit-resource/
+    rm -rf /opt/webkit-resource/webkit-resource2dmt
     sync    
     rm -rf /tmp/$RELEASE_WEBKIT
 fi
