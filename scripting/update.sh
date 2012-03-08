@@ -4,15 +4,15 @@
 ### Variables defined ####
 ##########################
 if [ "$2" = "6i78" ] ; then
-    URL_DEMO_BOARD=http://10.3.40.121/test/LS30i_image/update_850/Demo_board
+    URL_DEMO_BOARD=http://10.3.40.12/test/LS30i_image/update_850/Demo_board
 fi
 
 if [ "$2" = "" ] ; then
-    URL_DEMO_BOARD=http://10.3.40.121/test/LS30i_image/update_lcd6i48/Demo_board
+    URL_DEMO_BOARD=http://10.3.40.12/test/LS30i_image/update_lcd6i48/Demo_board
 fi	
 
-URL_RESOURCE=http://10.3.40.121/test/LS30i_image/store_resource_all_lcd850_6i78/latest
-URL_RESOURCE_RELEASE=http://10.3.40.121/test/LS30i_image/store_resource_all_lcd850_6i78/release/RC_V1
+URL_RESOURCE=http://10.3.40.12/test/LS30i_image/store_resource_all_lcd850_6i78/latest
+URL_RESOURCE_RELEASE=http://10.3.40.12/test/LS30i_image/store_resource_all_lcd850_6i78/release/RC_V1
 
 WEBKIT=webkit-resource.tar.gz
 WIDGET=widget-resource.tar.gz
@@ -133,7 +133,7 @@ fi
 if [ "$1" = "mouse" ] ; then
     echo UPDATE mouse ... !
     rm -rf /vendor/lib/directfb-1.4-0/inputdrivers/libdirectfb_mstar_linux_input.so
-    wget http://10.3.40.121/test/LS30i_image/update_lcd6i48/libdirectfb_mstar_linux_input.so -P /vendor/lib/directfb-1.4-0/inputdrivers/
+    wget http://10.3.40.12/test/LS30i_image/update_lcd6i48/libdirectfb_mstar_linux_input.so -P /vendor/lib/directfb-1.4-0/inputdrivers/
     sync    
 fi
 
